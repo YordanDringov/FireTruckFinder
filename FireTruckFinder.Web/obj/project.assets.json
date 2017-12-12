@@ -13214,11 +13214,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dringov\\source\\repos\\FireTrucksFinder\\FireTruckFinder.Web\\FireTruckFinder.Web.csproj",
+      "projectUniqueName": "C:\\Users\\Dringov\\FireTruckFinder\\FireTruckFinder.Web\\FireTruckFinder.Web.csproj",
       "projectName": "FireTruckFinder.Web",
-      "projectPath": "C:\\Users\\Dringov\\source\\repos\\FireTrucksFinder\\FireTruckFinder.Web\\FireTruckFinder.Web.csproj",
+      "projectPath": "C:\\Users\\Dringov\\FireTruckFinder\\FireTruckFinder.Web\\FireTruckFinder.Web.csproj",
       "packagesPath": "C:\\Users\\Dringov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dringov\\source\\repos\\FireTrucksFinder\\FireTruckFinder.Web\\obj\\",
+      "outputPath": "C:\\Users\\Dringov\\FireTruckFinder\\FireTruckFinder.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13237,8 +13237,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\Dringov\\source\\repos\\FireTrucksFinder\\FireTruckFinder.Data\\FireTruckFinder.Data.csproj": {
-              "projectPath": "C:\\Users\\Dringov\\source\\repos\\FireTrucksFinder\\FireTruckFinder.Data\\FireTruckFinder.Data.csproj"
+            "C:\\Users\\Dringov\\FireTruckFinder\\FireTruckFinder.Data\\FireTruckFinder.Data.csproj": {
+              "projectPath": "C:\\Users\\Dringov\\FireTruckFinder\\FireTruckFinder.Data\\FireTruckFinder.Data.csproj"
             }
           }
         }
