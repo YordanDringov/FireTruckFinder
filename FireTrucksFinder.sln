@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2006
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireTruckFinder.Web", "FireTruckFinder.Web\FireTruckFinder.Web.csproj", "{48B92F11-78C3-4F28-B4F7-045F039C6BD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireTruckFinder.Data", "FireTruckFinder.Data\FireTruckFinder.Data.csproj", "{D02A89E6-D30C-40C9-A25E-90392DB883F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48B92F11-78C3-4F28-B4F7-045F039C6BD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48B92F11-78C3-4F28-B4F7-045F039C6BD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48B92F11-78C3-4F28-B4F7-045F039C6BD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48B92F11-78C3-4F28-B4F7-045F039C6BD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D02A89E6-D30C-40C9-A25E-90392DB883F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D02A89E6-D30C-40C9-A25E-90392DB883F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D02A89E6-D30C-40C9-A25E-90392DB883F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D02A89E6-D30C-40C9-A25E-90392DB883F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68CE9C80-DCF4-465C-9E89-F0091CACFA4D}
+	EndGlobalSection
+EndGlobal

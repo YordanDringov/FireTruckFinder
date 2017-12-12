@@ -1,0 +1,14 @@
+C:\Users\Dringov\source\repos\FireTrucksFinder\FireTruckFinder.Web\obj\Debug\netcoreapp2.0\FireTruckFinder.Web.csprojResolveAssemblyReference.cache
+C:\Users\Dringov\source\repos\FireTrucksFinder\FireTruckFinder.Web\obj\Debug\netcoreapp2.0\FireTruckFinder.Web.csproj.CoreCompileInputs.cache
+C:\Users\Dringov\source\repos\FireTrucksFinder\FireTruckFinder.Web\obj\Debug\netcoreapp2.0\FireTruckFinder.Web.AssemblyInfoInputs.cache
+C:\Users\Dringov\source\repos\FireTrucksFinder\FireTruckFinder.Web\obj\Debug\netcoreapp2.0\FireTruckFinder.Web.AssemblyInfo.cs
+C:\Users\Dringov\source\repos\FireTrucksFinder\FireTruckFinder.Web\bin\Debug\netcoreapp2.0\FireTruckFinder.Web.deps.json
+C:\Users\Dringov\source\repos\FireTrucksFinder\FireTruckFinder.Web\bin\Debug\netcoreapp2.0\FireTruckFinder.Web.runtimeconfig.json
+C:\Users\Dringov\source\repos\FireTrucksFinder\FireTruckFinder.Web\bin\Debug\netcoreapp2.0\FireTruckFinder.Web.runtimeconfig.dev.json
+C:\Users\Dringov\source\repos\FireTrucksFinder\FireTruckFinder.Web\bin\Debug\netcoreapp2.0\FireTruckFinder.Web.dll
+C:\Users\Dringov\source\repos\FireTrucksFinder\FireTruckFinder.Web\bin\Debug\netcoreapp2.0\FireTruckFinder.Web.pdb
+C:\Users\Dringov\source\repos\FireTrucksFinder\FireTruckFinder.Web\bin\Debug\netcoreapp2.0\FireTruckFinder.Data.dll
+C:\Users\Dringov\source\repos\FireTrucksFinder\FireTruckFinder.Web\bin\Debug\netcoreapp2.0\FireTruckFinder.Data.pdb
+C:\Users\Dringov\source\repos\FireTrucksFinder\FireTruckFinder.Web\obj\Debug\netcoreapp2.0\FireTruckFinder.Web.dll
+C:\Users\Dringov\source\repos\FireTrucksFinder\FireTruckFinder.Web\obj\Debug\netcoreapp2.0\FireTruckFinder.Web.pdb
+C:\Users\Dringov\source\repos\FireTrucksFinder\FireTruckFinder.Web\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
