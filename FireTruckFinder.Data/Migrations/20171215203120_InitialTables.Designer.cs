@@ -9,12 +9,13 @@ using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.EntityFrameworkCore.Storage.Internal;
 using System;
 
-namespace FireTruckFinder.Web.Data.Migrations
+namespace FireTruckFinder.Data.Migrations
 {
     [DbContext(typeof(FireTruckFinderDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20171215203120_InitialTables")]
+    partial class InitialTables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
