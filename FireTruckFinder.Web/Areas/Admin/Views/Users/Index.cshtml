@@ -1,7 +1,7 @@
 ﻿@model AdminUserListingViewModel
 
 @{
-    ViewData["Title"] = "Admin Users";
+    ViewData["Title"] = "All Users";
 }
 
 <table class="table table-bordered table-hover">
@@ -39,6 +39,7 @@
                                 <input type="submit" value="Add to Role" class="btn btn-primary" />
                             </div>
                         </form>
+                        <a asp-area="Admin" asp-controller="Users" asp-action="Delete" asp-route-id="@user.Id" class="btn btn-primary">Delete</a>
                     </div>
                 </td>
             </tr>

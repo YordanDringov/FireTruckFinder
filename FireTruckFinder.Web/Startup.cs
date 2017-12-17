@@ -37,6 +37,12 @@
                 .AddDefaultTokenProviders();
 
             services.AddAutoMapper();
+            services.AddDomainServices();
+
+            services.AddRouting(options =>
+            {
+                options.LowercaseUrls = true;
+            });
 
             services.AddMvc(options =>
             {
@@ -60,7 +66,6 @@
             }
 
             app.UseStaticFiles();
-
             app.UseAuthentication();
 
             app.UseMvc(routes =>

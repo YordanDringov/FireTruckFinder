@@ -71,5 +71,38 @@
             await this.userManager.AddToRoleAsync(user, model.Role);
             return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(DeleteUserViewModel model)
+        {
+            var user = await userManager.FindByIdAsync(model.Id);
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            return View(new DeleteUserViewModel
+            {
+                Id = model.Id,
+                UserName = user.UserName
+            });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Destroy (DeleteUserViewModel model)
+        {
+           var user = await userManager.FindByIdAsync(model.Id);
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            await userManager.DeleteAsync(user);
+
+            TempData.AddSuccessMessage($"User {user.UserName} was succesfully deleted");
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

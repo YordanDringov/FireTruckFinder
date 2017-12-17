@@ -15,6 +15,7 @@
         [EmailAddress]
         public string Email { get; set; }
 
+        [DataType(DataType.Date)]
         public DateTime Birthdate { get; set; }
 
         [Required]
