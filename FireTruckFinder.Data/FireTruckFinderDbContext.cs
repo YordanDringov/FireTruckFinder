@@ -2,8 +2,9 @@
 {
     using Models;
     using Microsoft.EntityFrameworkCore;
+    using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
-    public class FireTruckFinderDbContext : DbContext
+    public class FireTruckFinderDbContext : IdentityDbContext<User>
     {
         public DbSet<FireTruck> FireTrucks { get; set; }
         public DbSet<FirePump> FirePumps { get; set; }

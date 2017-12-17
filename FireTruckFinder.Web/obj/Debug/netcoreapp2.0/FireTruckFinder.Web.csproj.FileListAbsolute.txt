@@ -26,3 +26,7 @@ C:\Users\Dringov\FireTruckFinder\FireTruckFinder.Web\obj\Debug\netcoreapp2.0\Fir
 C:\Users\Dringov\FireTruckFinder\FireTruckFinder.Web\obj\Debug\netcoreapp2.0\FireTruckFinder.Web.AssemblyInfo.cs
 C:\Users\Dringov\FireTruckFinder\FireTruckFinder.Web\obj\Debug\netcoreapp2.0\FireTruckFinder.Web.dll
 C:\Users\Dringov\FireTruckFinder\FireTruckFinder.Web\obj\Debug\netcoreapp2.0\FireTruckFinder.Web.pdb
+C:\Users\Dringov\FireTruckFinder\FireTruckFinder.Web\bin\Debug\netcoreapp2.0\FireTruckFinder.Common.dll
+C:\Users\Dringov\FireTruckFinder\FireTruckFinder.Web\bin\Debug\netcoreapp2.0\FireTruckFinder.Services.dll
+C:\Users\Dringov\FireTruckFinder\FireTruckFinder.Web\bin\Debug\netcoreapp2.0\FireTruckFinder.Services.pdb
+C:\Users\Dringov\FireTruckFinder\FireTruckFinder.Web\bin\Debug\netcoreapp2.0\FireTruckFinder.Common.pdb

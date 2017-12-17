@@ -1,4 +1,4 @@
-﻿namespace FireTruckFinder.Web.Infrastructure.Mapping
+﻿namespace FireTruckFinder.Common.Mapping
 {
     using AutoMapper;
 

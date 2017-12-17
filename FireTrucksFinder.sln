@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2006
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireTruckFinder.Web", "FireTruckFinder.Web\FireTruckFinder.Web.csproj", "{48B92F11-78C3-4F28-B4F7-045F039C6BD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FireTruckFinder.Web", "FireTruckFinder.Web\FireTruckFinder.Web.csproj", "{48B92F11-78C3-4F28-B4F7-045F039C6BD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireTruckFinder.Data", "FireTruckFinder.Data\FireTruckFinder.Data.csproj", "{D02A89E6-D30C-40C9-A25E-90392DB883F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FireTruckFinder.Data", "FireTruckFinder.Data\FireTruckFinder.Data.csproj", "{D02A89E6-D30C-40C9-A25E-90392DB883F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireTruckFinder.Services", "FireTrucksFinder.Service\FireTruckFinder.Services.csproj", "{192B10CA-B374-4D37-AE8D-7411563DB0E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireTruckFinder.Common", "FireTruckFinder.Common\FireTruckFinder.Common.csproj", "{962EB2C9-78EB-47F2-8BEA-B23419E9F9D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{D02A89E6-D30C-40C9-A25E-90392DB883F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D02A89E6-D30C-40C9-A25E-90392DB883F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D02A89E6-D30C-40C9-A25E-90392DB883F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{192B10CA-B374-4D37-AE8D-7411563DB0E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{192B10CA-B374-4D37-AE8D-7411563DB0E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{192B10CA-B374-4D37-AE8D-7411563DB0E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{192B10CA-B374-4D37-AE8D-7411563DB0E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{962EB2C9-78EB-47F2-8BEA-B23419E9F9D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{962EB2C9-78EB-47F2-8BEA-B23419E9F9D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{962EB2C9-78EB-47F2-8BEA-B23419E9F9D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{962EB2C9-78EB-47F2-8BEA-B23419E9F9D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

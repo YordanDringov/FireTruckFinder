@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FireTruckFinder.Data\FireTruckFinder.Data.csproj" />
+    <ProjectReference Include="..\FireTrucksFinder.Service\FireTruckFinder.Services.csproj" />
   </ItemGroup>
 
 </Project>
