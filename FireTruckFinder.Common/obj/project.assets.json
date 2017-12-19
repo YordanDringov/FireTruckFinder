@@ -2944,11 +2944,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dringov\\FireTruckFinder\\FireTruckFinder.Common\\FireTruckFinder.Common.csproj",
+      "projectUniqueName": "C:\\Users\\Dringov\\Desktop\\FireTruckFinder\\FireTruckFinder.Common\\FireTruckFinder.Common.csproj",
       "projectName": "FireTruckFinder.Common",
-      "projectPath": "C:\\Users\\Dringov\\FireTruckFinder\\FireTruckFinder.Common\\FireTruckFinder.Common.csproj",
+      "projectPath": "C:\\Users\\Dringov\\Desktop\\FireTruckFinder\\FireTruckFinder.Common\\FireTruckFinder.Common.csproj",
       "packagesPath": "C:\\Users\\Dringov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dringov\\FireTruckFinder\\FireTruckFinder.Common\\obj\\",
+      "outputPath": "C:\\Users\\Dringov\\Desktop\\FireTruckFinder\\FireTruckFinder.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

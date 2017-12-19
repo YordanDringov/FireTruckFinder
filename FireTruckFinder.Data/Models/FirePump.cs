@@ -20,6 +20,8 @@
         [Range(0, int.MaxValue)]
         public int Power { get; set; }
 
-        public List<FireTruck> Firetrucks { get; set; } = new List<FireTruck>();
+        public string SellerId { get; set; }
+
+       public User Seller { get; set; }
     }
 }

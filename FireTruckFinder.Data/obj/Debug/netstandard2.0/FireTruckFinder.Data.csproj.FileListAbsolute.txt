@@ -16,3 +16,12 @@ C:\Users\Dringov\FireTruckFinder\FireTruckFinder.Data\obj\Debug\netstandard2.0\F
 C:\Users\Dringov\FireTruckFinder\FireTruckFinder.Data\obj\Debug\netstandard2.0\FireTruckFinder.Data.AssemblyInfo.cs
 C:\Users\Dringov\FireTruckFinder\FireTruckFinder.Data\obj\Debug\netstandard2.0\FireTruckFinder.Data.dll
 C:\Users\Dringov\FireTruckFinder\FireTruckFinder.Data\obj\Debug\netstandard2.0\FireTruckFinder.Data.pdb
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Data\bin\Debug\netstandard2.0\FireTruckFinder.Data.deps.json
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Data\bin\Debug\netstandard2.0\FireTruckFinder.Data.dll
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Data\bin\Debug\netstandard2.0\FireTruckFinder.Data.pdb
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Data\obj\Debug\netstandard2.0\FireTruckFinder.Data.csprojResolveAssemblyReference.cache
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Data\obj\Debug\netstandard2.0\FireTruckFinder.Data.csproj.CoreCompileInputs.cache
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Data\obj\Debug\netstandard2.0\FireTruckFinder.Data.AssemblyInfoInputs.cache
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Data\obj\Debug\netstandard2.0\FireTruckFinder.Data.AssemblyInfo.cs
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Data\obj\Debug\netstandard2.0\FireTruckFinder.Data.dll
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Data\obj\Debug\netstandard2.0\FireTruckFinder.Data.pdb

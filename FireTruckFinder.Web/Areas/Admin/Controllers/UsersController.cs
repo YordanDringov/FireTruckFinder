@@ -44,7 +44,7 @@
             var model = new AdminUserListingViewModel
             {
                 Users = users,
-                Roles = roles
+                Roles = roles,
             };
 
             return View(model);
@@ -90,9 +90,9 @@
         }
 
         [HttpPost]
-        public async Task<IActionResult> Destroy (DeleteUserViewModel model)
+        public async Task<IActionResult> Destroy (string id)
         {
-           var user = await userManager.FindByIdAsync(model.Id);
+           var user = await userManager.FindByIdAsync(id);
 
             if (user == null)
             {
@@ -104,5 +104,21 @@
             TempData.AddSuccessMessage($"User {user.UserName} was succesfully deleted");
             return RedirectToAction(nameof(Index));
         }
+
+        //[HttpGet]
+        //public async Task<IActionResult> Details(DetailsUserViewModel model)
+        //{
+        //    var user = await userManager.FindByIdAsync();
+
+        //    if (user == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    return View(new DetailsUserViewModel
+        //    {
+                 
+        //    });
+        //}
     }
 }

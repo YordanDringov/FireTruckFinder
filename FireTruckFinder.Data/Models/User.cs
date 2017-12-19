@@ -8,6 +8,10 @@
     {
         public DateTime Birtdate { get; set; }
 
-        public List<Sale> Sales { get; set; } = new List<Sale>();
+        public List<FireTruck> FireTrucks { get; set; } = new List<FireTruck>();
+
+        public List<FirePump> FirePumps { get; set; } = new List<FirePump>();
+
+        public List<FireExtinguisher> FireExtinguishers { get; set; } = new List<FireExtinguisher>();
     }
 }

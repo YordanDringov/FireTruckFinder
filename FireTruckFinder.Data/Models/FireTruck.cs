@@ -17,8 +17,6 @@
         [MaxLength(DataConstants.ModelTitleMaxLength)]
         public string Model { get; set; }
 
-        public Category Category { get; set; } 
-
         public int WatertankCapacity { get; set; }
 
         [Required]
@@ -28,12 +26,8 @@
         [Range(DataConstants.MinPrice, DataConstants.MaxPrice)]
         public double Price { get; set; }
 
-        public int PumpId { get; set; }
+        public string SellerId { get; set; }
 
-        public FirePump Pump { get; set; }
-
-        public int SaleId { get; set; }
-
-        public Sale Sale { get; set; }
+        public User Seller { get; set; }
     }
 }

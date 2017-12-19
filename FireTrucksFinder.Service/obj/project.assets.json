@@ -4604,11 +4604,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dringov\\FireTruckFinder\\FireTrucksFinder.Service\\FireTruckFinder.Services.csproj",
+      "projectUniqueName": "C:\\Users\\Dringov\\Desktop\\FireTruckFinder\\FireTrucksFinder.Service\\FireTruckFinder.Services.csproj",
       "projectName": "FireTruckFinder.Services",
-      "projectPath": "C:\\Users\\Dringov\\FireTruckFinder\\FireTrucksFinder.Service\\FireTruckFinder.Services.csproj",
+      "projectPath": "C:\\Users\\Dringov\\Desktop\\FireTruckFinder\\FireTrucksFinder.Service\\FireTruckFinder.Services.csproj",
       "packagesPath": "C:\\Users\\Dringov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dringov\\FireTruckFinder\\FireTrucksFinder.Service\\obj\\",
+      "outputPath": "C:\\Users\\Dringov\\Desktop\\FireTruckFinder\\FireTrucksFinder.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4627,11 +4627,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Dringov\\FireTruckFinder\\FireTruckFinder.Data\\FireTruckFinder.Data.csproj": {
-              "projectPath": "C:\\Users\\Dringov\\FireTruckFinder\\FireTruckFinder.Data\\FireTruckFinder.Data.csproj"
+            "C:\\Users\\Dringov\\Desktop\\FireTruckFinder\\FireTruckFinder.Data\\FireTruckFinder.Data.csproj": {
+              "projectPath": "C:\\Users\\Dringov\\Desktop\\FireTruckFinder\\FireTruckFinder.Data\\FireTruckFinder.Data.csproj"
             },
-            "C:\\Users\\Dringov\\FireTruckFinder\\FireTruckFinder.Common\\FireTruckFinder.Common.csproj": {
-              "projectPath": "C:\\Users\\Dringov\\FireTruckFinder\\FireTruckFinder.Common\\FireTruckFinder.Common.csproj"
+            "C:\\Users\\Dringov\\Desktop\\FireTruckFinder\\FireTruckFinder.Common\\FireTruckFinder.Common.csproj": {
+              "projectPath": "C:\\Users\\Dringov\\Desktop\\FireTruckFinder\\FireTruckFinder.Common\\FireTruckFinder.Common.csproj"
             }
           }
         }

@@ -7,3 +7,12 @@ C:\Users\Dringov\FireTruckFinder\FireTruckFinder.Common\bin\Debug\netstandard2.0
 C:\Users\Dringov\FireTruckFinder\FireTruckFinder.Common\obj\Debug\netstandard2.0\FireTruckFinder.Common.csprojResolveAssemblyReference.cache
 C:\Users\Dringov\FireTruckFinder\FireTruckFinder.Common\obj\Debug\netstandard2.0\FireTruckFinder.Common.dll
 C:\Users\Dringov\FireTruckFinder\FireTruckFinder.Common\obj\Debug\netstandard2.0\FireTruckFinder.Common.pdb
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Common\bin\Debug\netstandard2.0\FireTruckFinder.Common.deps.json
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Common\bin\Debug\netstandard2.0\FireTruckFinder.Common.dll
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Common\bin\Debug\netstandard2.0\FireTruckFinder.Common.pdb
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Common\obj\Debug\netstandard2.0\FireTruckFinder.Common.csprojResolveAssemblyReference.cache
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Common\obj\Debug\netstandard2.0\FireTruckFinder.Common.csproj.CoreCompileInputs.cache
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Common\obj\Debug\netstandard2.0\FireTruckFinder.Common.AssemblyInfoInputs.cache
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Common\obj\Debug\netstandard2.0\FireTruckFinder.Common.AssemblyInfo.cs
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Common\obj\Debug\netstandard2.0\FireTruckFinder.Common.dll
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Common\obj\Debug\netstandard2.0\FireTruckFinder.Common.pdb

@@ -11,3 +11,16 @@ C:\Users\Dringov\FireTruckFinder\FireTrucksFinder.Service\obj\Debug\netstandard2
 C:\Users\Dringov\FireTruckFinder\FireTrucksFinder.Service\obj\Debug\netstandard2.0\FireTruckFinder.Services.AssemblyInfo.cs
 C:\Users\Dringov\FireTruckFinder\FireTrucksFinder.Service\obj\Debug\netstandard2.0\FireTruckFinder.Services.dll
 C:\Users\Dringov\FireTruckFinder\FireTrucksFinder.Service\obj\Debug\netstandard2.0\FireTruckFinder.Services.pdb
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTrucksFinder.Service\bin\Debug\netstandard2.0\FireTruckFinder.Services.deps.json
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTrucksFinder.Service\bin\Debug\netstandard2.0\FireTruckFinder.Services.dll
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTrucksFinder.Service\bin\Debug\netstandard2.0\FireTruckFinder.Services.pdb
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTrucksFinder.Service\bin\Debug\netstandard2.0\FireTruckFinder.Common.dll
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTrucksFinder.Service\bin\Debug\netstandard2.0\FireTruckFinder.Data.dll
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTrucksFinder.Service\bin\Debug\netstandard2.0\FireTruckFinder.Common.pdb
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTrucksFinder.Service\bin\Debug\netstandard2.0\FireTruckFinder.Data.pdb
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTrucksFinder.Service\obj\Debug\netstandard2.0\FireTruckFinder.Services.csprojResolveAssemblyReference.cache
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTrucksFinder.Service\obj\Debug\netstandard2.0\FireTruckFinder.Services.csproj.CoreCompileInputs.cache
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTrucksFinder.Service\obj\Debug\netstandard2.0\FireTruckFinder.Services.AssemblyInfoInputs.cache
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTrucksFinder.Service\obj\Debug\netstandard2.0\FireTruckFinder.Services.AssemblyInfo.cs
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTrucksFinder.Service\obj\Debug\netstandard2.0\FireTruckFinder.Services.dll
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTrucksFinder.Service\obj\Debug\netstandard2.0\FireTruckFinder.Services.pdb

@@ -8,7 +8,7 @@
     {
         public DbSet<FireTruck> FireTrucks { get; set; }
         public DbSet<FirePump> FirePumps { get; set; }
-        public DbSet<Sale> Sales { get; set; }
+        public DbSet<FireExtinguisher> FireExtinguishers { get; set; }
         public DbSet<User> Sellers { get; set; }
 
         public FireTruckFinderDbContext(DbContextOptions<FireTruckFinderDbContext> options)
@@ -18,26 +18,26 @@
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            //Firetruck -- Firepump / one-to-many rel
+            //Firetruck -- Seller / one-to-many rel
 
             builder.Entity<FireTruck>()
-                .HasOne<FirePump>(ft => ft.Pump)
-                .WithMany(fp => fp.Firetrucks)
-                .HasForeignKey(ft => ft.PumpId);
+                .HasOne<User>(ft => ft.Seller)
+                .WithMany(s => s.FireTrucks)
+                .HasForeignKey(ft => ft.SellerId);
 
-            //Sale -- FireTruck / one-to-one rel
+            //FirePump -- Seller / one-to-many rel
 
-            builder.Entity<Sale>()
-                .HasOne(s => s.FireTruck)
-                .WithOne(ft => ft.Sale)
-                .HasForeignKey<FireTruck>(ft => ft.SaleId);
+            builder.Entity<FirePump>()
+                .HasOne(fp => fp.Seller)
+                .WithMany(s => s.FirePumps)
+                .HasForeignKey(fp => fp.SellerId);
 
-            // Sale -- Seller / one to many rel
+            // FireExtinguisher -- Seller / one to many rel
 
-            builder.Entity<Sale>()
-                .HasOne(s => s.Seller)
-                .WithMany(sl => sl.Sales)
-                .HasForeignKey(s => s.SellerId);
+            builder.Entity<FireExtinguisher>()
+                .HasOne(f => f.Seller)
+                .WithMany(s => s.FireExtinguishers)
+                .HasForeignKey(f => f.SellerId);
 
             base.OnModelCreating(builder);
         }

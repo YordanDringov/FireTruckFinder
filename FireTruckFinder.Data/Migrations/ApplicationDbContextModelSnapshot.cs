@@ -21,6 +21,24 @@ namespace FireTruckFinder.Web.Data.Migrations
                 .HasAnnotation("ProductVersion", "2.0.1-rtm-125")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("FireTruckFinder.Data.Models.FireExtinguisher", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<double>("Price");
+
+                    b.Property<string>("SellerId");
+
+                    b.Property<int>("Type");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SellerId");
+
+                    b.ToTable("FireExtinguishers");
+                });
+
             modelBuilder.Entity("FireTruckFinder.Data.Models.FirePump", b =>
                 {
                     b.Property<int>("Id")
@@ -34,7 +52,11 @@ namespace FireTruckFinder.Web.Data.Migrations
 
                     b.Property<int>("Power");
 
+                    b.Property<string>("SellerId");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("SellerId");
 
                     b.ToTable("FirePumps");
                 });
@@ -43,8 +65,6 @@ namespace FireTruckFinder.Web.Data.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
-
-                    b.Property<int>("Category");
 
                     b.Property<string>("Make")
                         .IsRequired()
@@ -58,36 +78,15 @@ namespace FireTruckFinder.Web.Data.Migrations
 
                     b.Property<DateTime>("ProduceDate");
 
-                    b.Property<int>("PumpId");
-
-                    b.Property<int>("SaleId");
+                    b.Property<string>("SellerId");
 
                     b.Property<int>("WatertankCapacity");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("PumpId");
-
-                    b.HasIndex("SaleId")
-                        .IsUnique();
-
-                    b.ToTable("FireTrucks");
-                });
-
-            modelBuilder.Entity("FireTruckFinder.Data.Models.Sale", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("FireTruckId");
-
-                    b.Property<string>("SellerId");
-
-                    b.HasKey("Id");
-
                     b.HasIndex("SellerId");
 
-                    b.ToTable("Sales");
+                    b.ToTable("FireTrucks");
                 });
 
             modelBuilder.Entity("FireTruckFinder.Data.Models.User", b =>
@@ -251,23 +250,24 @@ namespace FireTruckFinder.Web.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("FireTruckFinder.Data.Models.FireTruck", b =>
-                {
-                    b.HasOne("FireTruckFinder.Data.Models.FirePump", "Pump")
-                        .WithMany("Firetrucks")
-                        .HasForeignKey("PumpId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("FireTruckFinder.Data.Models.Sale", "Sale")
-                        .WithOne("FireTruck")
-                        .HasForeignKey("FireTruckFinder.Data.Models.FireTruck", "SaleId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("FireTruckFinder.Data.Models.Sale", b =>
+            modelBuilder.Entity("FireTruckFinder.Data.Models.FireExtinguisher", b =>
                 {
                     b.HasOne("FireTruckFinder.Data.Models.User", "Seller")
-                        .WithMany("Sales")
+                        .WithMany("FireExtinguishers")
+                        .HasForeignKey("SellerId");
+                });
+
+            modelBuilder.Entity("FireTruckFinder.Data.Models.FirePump", b =>
+                {
+                    b.HasOne("FireTruckFinder.Data.Models.User", "Seller")
+                        .WithMany("FirePumps")
+                        .HasForeignKey("SellerId");
+                });
+
+            modelBuilder.Entity("FireTruckFinder.Data.Models.FireTruck", b =>
+                {
+                    b.HasOne("FireTruckFinder.Data.Models.User", "Seller")
+                        .WithMany("FireTrucks")
                         .HasForeignKey("SellerId");
                 });
 
