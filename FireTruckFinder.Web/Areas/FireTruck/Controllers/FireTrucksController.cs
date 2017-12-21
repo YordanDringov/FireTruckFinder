@@ -33,7 +33,7 @@
                 TotalFireTrucks = await this.firetrucks.TotalAsync(),
                 CurrentPage = page
             });
-
+        [AllowAnonymous]
         public async Task<IActionResult> Details(int id)
             => this.ViewOrNotFound(await this.firetrucks.ById(id));
 
@@ -42,12 +42,12 @@
 
         [HttpPost]
         [ValidateModelState]
-        public async Task<IActionResult> Create(FireTruckCreateViewModel model)
+        public async Task<IActionResult> Create(FireTruckCreateViewModel firetruckModel)
         {
 
             var sellerId = userManager.GetUserId(User);
 
-            await this.firetrucks.CreateAsync(model.Make, model.Model, model.WatertankCapacity, model.ProduceDate, model.Price, sellerId);
+            await this.firetrucks.CreateAsync(firetruckModel.Make, firetruckModel.Model, firetruckModel.WatertankCapacity, firetruckModel.ProduceDate, firetruckModel.Price, firetruckModel.ImageUrl, sellerId);
 
             return RedirectToAction(nameof(Index));
         }

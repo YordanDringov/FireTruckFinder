@@ -43,8 +43,8 @@ C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Web\bin\Debug\netcoreap
 C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Web\bin\Debug\netcoreapp2.0\FireTruckFinder.Common.pdb
 C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Web\obj\Debug\netcoreapp2.0\FireTruckFinder.Web.csprojResolveAssemblyReference.cache
 C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Web\obj\Debug\netcoreapp2.0\FireTruckFinder.Web.csproj.CoreCompileInputs.cache
-C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Web\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
 C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Web\obj\Debug\netcoreapp2.0\FireTruckFinder.Web.AssemblyInfoInputs.cache
 C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Web\obj\Debug\netcoreapp2.0\FireTruckFinder.Web.AssemblyInfo.cs
 C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Web\obj\Debug\netcoreapp2.0\FireTruckFinder.Web.dll
 C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Web\obj\Debug\netcoreapp2.0\FireTruckFinder.Web.pdb
+C:\Users\Dringov\Desktop\FireTruckFinder\FireTruckFinder.Web\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs

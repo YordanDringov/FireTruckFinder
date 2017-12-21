@@ -24,6 +24,11 @@
         public DateTime ProduceDate { get; set; }
 
         [Required]
+        [MaxLength(2000)]
+        [MinLength(10)]
+        public string ImageUrl { get; set; }
+
+        [Required]
         [Range(DataConstants.MinPrice, DataConstants.MaxPrice)]
         public double Price { get; set; }
 

@@ -18,9 +18,9 @@
 
         public double Price { get; set; }
 
-        public string SellerId { get; set; }
+        public string Seller { get; set; }
 
-        public User Seller { get; set; }
+        public string ImageUrl { get; set; }
 
         public void ConfigureMapping(Profile mapper)
             => mapper.CreateMap<FireTruck, FireTruckDetailsServiceModel>()

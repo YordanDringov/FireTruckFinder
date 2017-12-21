@@ -66,6 +66,10 @@ namespace FireTruckFinder.Web.Data.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasMaxLength(2000);
+
                     b.Property<string>("Make")
                         .IsRequired()
                         .HasMaxLength(50);

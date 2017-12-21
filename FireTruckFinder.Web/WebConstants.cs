@@ -9,5 +9,6 @@
         public const string TempDataErrorMessageKey = "ErrorMessage";
 
         public const string FireTruckArea = "FireTruck";
+        public const string FirepumpArea = "Firepump";
     }
 }

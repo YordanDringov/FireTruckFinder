@@ -14,6 +14,8 @@
 
         public double Price { get; set; }
 
+        public string ImageUrl { get; set; }
+
         public User Seller { get; set; }
 
         public void ConfigureMapping(Profile profile)

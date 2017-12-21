@@ -4,8 +4,8 @@
     ViewData["Title"] = "All Users";
 }
 
-<table class="table table-bordered table-hover">
-    <thead>
+<table class="table table-bordered">
+    <thead class="active">
         <tr>
             <th>
                 Username
@@ -18,7 +18,7 @@
             </th>
         </tr>
     </thead>
-    <tbody>
+    <tbody class="alert-info">
         @foreach (var user in Model.Users)
         {
             <tr>
@@ -29,7 +29,7 @@
                     @user.Email
                 </td>
                 <td>
-                    <div class="row">
+                    <div class="row table-bordered">
                         <form method="post" asp-area="Admin" asp-controller="Users" asp-action="AddToRole">
                             <input type="hidden" name="UserId" value="@user.Id" />
                             <div class="col-md-9">
@@ -38,8 +38,9 @@
                             <div class="col-md-3">
                                 <input type="submit" value="Add to Role" class="btn btn-primary" />
                             </div>
+                            or
+                            <a asp-area="Admin" asp-controller="Users" asp-action="Delete" asp-route-id="@user.Id" class="btn btn-primary">Delete</a>
                         </form>
-                        <a asp-area="Admin" asp-controller="Users" asp-action="Delete" asp-route-id="@user.Id" class="btn btn-primary">Delete</a>
                     </div>
                 </td>
             </tr>

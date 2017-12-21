@@ -40,7 +40,7 @@
 
 
 
-        public async Task CreateAsync(string make, string model, int watertankCapacity, DateTime produceDate, double price, string sellerId)
+        public async Task CreateAsync(string make, string model, int watertankCapacity, DateTime produceDate, double price, string ImageUrl, string sellerId)
         {
             var firetruck = new FireTruck
             {
@@ -49,6 +49,7 @@
                 WatertankCapacity = watertankCapacity,
                 ProduceDate = produceDate,
                 Price = price,
+                ImageUrl = ImageUrl,
                 SellerId = sellerId
             };
             this.db.Add(firetruck);

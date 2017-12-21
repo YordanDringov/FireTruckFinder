@@ -7,7 +7,7 @@
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
-    using Services;
+    using Services.Admin;
     using System.Linq;
     using System.Threading.Tasks;
 
@@ -73,9 +73,9 @@
         }
 
         [HttpGet]
-        public async Task<IActionResult> Delete(DeleteUserViewModel model)
+        public async Task<IActionResult> Delete(DeleteUserViewModel userModel)
         {
-            var user = await userManager.FindByIdAsync(model.Id);
+            var user = await userManager.FindByIdAsync(userModel.Id);
 
             if (user == null)
             {
@@ -84,15 +84,15 @@
 
             return View(new DeleteUserViewModel
             {
-                Id = model.Id,
+                Id = userModel.Id,
                 UserName = user.UserName
             });
         }
 
         [HttpPost]
-        public async Task<IActionResult> Destroy (string id)
+        public async Task<IActionResult> DeleteConfirm(DeleteUserViewModel deleteUser)
         {
-           var user = await userManager.FindByIdAsync(id);
+           var user = await userManager.FindByIdAsync(deleteUser.Id);
 
             if (user == null)
             {
@@ -104,21 +104,5 @@
             TempData.AddSuccessMessage($"User {user.UserName} was succesfully deleted");
             return RedirectToAction(nameof(Index));
         }
-
-        //[HttpGet]
-        //public async Task<IActionResult> Details(DetailsUserViewModel model)
-        //{
-        //    var user = await userManager.FindByIdAsync();
-
-        //    if (user == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    return View(new DetailsUserViewModel
-        //    {
-                 
-        //    });
-        //}
     }
 }

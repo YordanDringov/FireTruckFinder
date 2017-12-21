@@ -8,6 +8,11 @@
         public int Id { get; set; }
 
         [Required]
+        [MaxLength(2000)]
+        [MinLength(10)]
+        public string ImageUrl { get; set; }
+
+        [Required]
         [MinLength(DataConstants.ModelTitleMinLength)]
         [MaxLength(DataConstants.ModelTitleMaxLength)]
         public string Make { get; set; }

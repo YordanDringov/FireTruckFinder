@@ -1,0 +1,28 @@
+﻿@model FirepumpCreateViewModel
+@{
+    ViewData["Title"] = "Create Firepump";
+}
+<h2>@ViewData["Title"]</h2>
+
+<div class="row">
+    <div class="col-md-8">
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="Model"></label>
+                <input asp-for="Model" class="form-control" />
+                <span asp-validation-for="Model" class="text-danger"></span>
+               
+                <label asp-for="Efficiency"></label>
+                <input asp-for="Efficiency" class="form-control" />
+                <span asp-validation-for="Efficiency" class="text-danger"></span>
+
+                <label asp-for="Power"></label>
+                <input asp-for="Power" class="form-control" />
+                <span asp-validation-for="Power" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-default">Add Firepump</button>
+        </form>
+    </div>
+</div>
+
+
