@@ -21,6 +21,12 @@ namespace FireTruckFinder.Services.Models.Firepump
         [Range(0, int.MaxValue)]
         public int Power { get; set; }
 
+        [Required]
+        [Range(0, 1000000)]
+        public double Price { get; set; }
+
+        public string ImageUrl { get; set; }
+
         public string SellerId { get; set; }
 
         public User Seller { get; set; }

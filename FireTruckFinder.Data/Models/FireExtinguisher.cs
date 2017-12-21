@@ -9,8 +9,11 @@ namespace FireTruckFinder.Data.Models
         [Required]
         public FireExtinguisherType Type { get; set; }
 
+        [Required]
         [Range(0,10000)]
         public double Price { get; set; }
+
+        public string ImageUrl { get; set; }
 
         public string SellerId { get; set; }
 

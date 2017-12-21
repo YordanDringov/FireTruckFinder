@@ -71,6 +71,40 @@
             await this.userManager.AddToRoleAsync(user, model.Role);
             return RedirectToAction("Index");
         }
+        [HttpPost]
+        public async Task<IActionResult> RemoveFromRole(AddUserToRoleFormModel model)
+        {
+            var user = await this.userManager.FindByIdAsync(model.UserId);
+
+            if (!await this.IdentityDetailsValid(user, model.Role))
+            {
+                ModelState.AddModelError(string.Empty, $"Invalid Identity Details for {user}");
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            bool IsUserInRole = await this.userManager.IsInRoleAsync(user, model.Role);
+
+            if (!IsUserInRole)
+            {
+                TempData.AddSuccessMessage($"User {user.UserName} is not in Role {model.Role}");
+                return RedirectToAction(nameof(Index));
+            }
+
+            await this.userManager.RemoveFromRoleAsync(user, model.Role);
+
+            TempData.AddSuccessMessage($"User {user.UserName} is removed from role {model.Role}");
+            return RedirectToAction(nameof(Index));
+        }
+        private async Task<bool> IdentityDetailsValid(User user, string role)
+        {
+            var roleExists = await this.roleManager.RoleExistsAsync(role);
+            var userExists = user != null;
+            return roleExists && userExists;
+        }
 
         [HttpGet]
         public async Task<IActionResult> Delete(DeleteUserViewModel userModel)

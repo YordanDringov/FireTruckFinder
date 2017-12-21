@@ -14,6 +14,6 @@
 
         Task<FireTruckDetailsServiceModel> ById(int id);
 
-        Task CreateAsync(string make, string model, int watertankCapacity, DateTime produceDate, double price, string IamgeUrl, string sellerId);
+        Task CreateAsync(string make, string model, int watertankCapacity, DateTime produceDate, double price, string imageUrl, string sellerId);
     }
 }

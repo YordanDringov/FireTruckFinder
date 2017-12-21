@@ -36,13 +36,15 @@
                    .FirstOrDefaultAsync();
 
 
-        public async Task CreateAsync(string model, double efficiency, int power, string sellerId)
+        public async Task CreateAsync(string model, double efficiency, int power, double price, string imageUrl, string sellerId)
         {
             var firepump = new FirePump
             {
                 Model = model,
                 Efficiency = efficiency,
                 Power = power,
+                Price = price,
+                ImageUrl = imageUrl,
                 SellerId = sellerId
             };
             this.db.Add(firepump);

@@ -14,7 +14,7 @@
                 Email
             </th>
             <th>
-                Add to Role
+                Add/Remove from Role
             </th>
         </tr>
     </thead>
@@ -32,14 +32,15 @@
                     <div class="row table-bordered">
                         <form method="post" asp-area="Admin" asp-controller="Users" asp-action="AddToRole">
                             <input type="hidden" name="UserId" value="@user.Id" />
-                            <div class="col-md-9">
-                                <select name="Role" asp-items="Model.Roles" class="form-control"></select>
-                            </div>
                             <div class="col-md-3">
                                 <input type="submit" value="Add to Role" class="btn btn-primary" />
                             </div>
-                            or
-                            <a asp-area="Admin" asp-controller="Users" asp-action="Delete" asp-route-id="@user.Id" class="btn btn-primary">Delete</a>
+                            <a method="post" asp-area="Admin" asp-controller="Users" asp-action="RemoveFromRole">
+                                <input type="hidden" name="UserId" value="@user.Id" />
+                                <div class="col-md-3">
+                                    <input type="submit" value="Remove From Role" class="btn btn-primary" />
+                                </div>
+                            </a>
                         </form>
                     </div>
                 </td>

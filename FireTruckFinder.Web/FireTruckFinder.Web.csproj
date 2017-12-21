@@ -25,4 +25,8 @@
     <ProjectReference Include="..\FireTrucksFinder.Service\FireTruckFinder.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\FireExtinguisher\Views\FireExtinguisher\" />
+  </ItemGroup>
+
 </Project>

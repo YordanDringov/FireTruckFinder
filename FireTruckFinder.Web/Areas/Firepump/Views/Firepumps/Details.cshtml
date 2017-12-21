@@ -5,7 +5,23 @@
 }
 <h2>@ViewData["Title"]</h2>
 
-
-
+<div class="row">
+    <div class="form-group">
+        <label asp-for="Power"></label>
+        <span asp-validation-for="Power" class="text-danger">@Model.Power </span>
+        <br />
+        <label asp-for="Efficiency"></label>
+        <span asp-validation-for="Efficiency" class="text-danger">@Model.Efficiency %</span>
+        <br />
+        <label asp-for="Price"></label>
+        <span asp-validation-for="Price" class="text-danger">@Model.Price $</span>
+        <br />
+        <div class="col-lg-offset">
+            <img src="@Model.ImageUrl" width="400" height="250" />
+        </div>
+        <br />
+        For more information contact to: @Model.Seller.Email
+    </div>
+</div>
 
 

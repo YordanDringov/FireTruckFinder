@@ -12,6 +12,6 @@
 
         Task<FirepumpDetailsServiceModel> ById(int id);
 
-        Task CreateAsync(string model, double efficiency, int power, string sellerId);
+        Task CreateAsync(string model, double efficiency, int power, double price, string imageUrl, string sellerId);
     }
 }
