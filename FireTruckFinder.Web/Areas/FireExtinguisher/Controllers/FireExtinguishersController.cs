@@ -12,7 +12,7 @@
     using Models;
 
     [Authorize]
-    [Area(FirepumpArea)]
+    [Area(FireExtinguisherArea)]
     public class FireExtinguishersController : Controller
     {
         private readonly IFireExtinguisherService fireExtinguishers;
@@ -33,6 +33,7 @@
                 CurrentPage = page
             });
 
+        [AllowAnonymous]
         public async Task<IActionResult> Details(int id)
             => this.ViewOrNotFound(await this.fireExtinguishers.ById(id));
 
@@ -46,7 +47,7 @@
             var sellerId = userManager.GetUserId(User);
 
             await this.fireExtinguishers.CreateAsync(fireExtinguisher.Type, fireExtinguisher.Price,
-                fireExtinguisher.ImageUrl, fireExtinguisher.SellerId);
+                fireExtinguisher.ImageUrl, sellerId);
 
             return RedirectToAction(nameof(Index));
         }

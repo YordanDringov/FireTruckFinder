@@ -1,4 +1,4 @@
-﻿namespace FireTruckFinder.Web.Areas.FireTruck.Controllers
+﻿namespace FireTruckFinder.Web.Areas.Firepump.Controllers
 {
     using FireTruckFinder.Data.Models;
     using FireTruckFinder.Services;
@@ -10,7 +10,6 @@
     using Infrastructure.Extensions;
     using Infrastructure.Filters;
     using static WebConstants;
-    using FireTruckFinder.Web.Areas.Firepump.Models;
 
     [Authorize]
     [Area(FirepumpArea)]
@@ -34,8 +33,9 @@
                 CurrentPage = page
             });
 
+        [AllowAnonymous]
         public async Task<IActionResult> Details(int id)
-            => this.ViewOrNotFound(await this.firepumps.ById(id));
+            => this.ViewOrNotFound(await firepumps.ById(id));
 
         public IActionResult Create() => View();
 
@@ -47,7 +47,7 @@
             var sellerId = userManager.GetUserId(User);
 
             await this.firepumps.CreateAsync(firepumpModel.Model, firepumpModel.Efficiency, firepumpModel.Power, firepumpModel.Price,
-                firepumpModel.ImageUrl, firepumpModel.SellerId);
+                firepumpModel.ImageUrl, sellerId);
 
             return RedirectToAction(nameof(Index));
         }

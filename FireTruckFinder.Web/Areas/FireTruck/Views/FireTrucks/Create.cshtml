@@ -1,41 +1,35 @@
 ﻿@model FireTruckCreateViewModel
 @{
-    ViewData["Title"] = "Create FireTruck";
+    ViewData["Title"] = "Add FireTruck";
 }
-
 <h2>@ViewData["Title"]</h2>
 
-
 <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-4">
         <form method="post">
             <div class="form-group">
                 <label asp-for="Make"></label>
                 <input asp-for="Make" class="form-control" />
                 <span asp-validation-for="Make" class="text-danger"></span>
-
                 <label asp-for="Model"></label>
                 <input asp-for="Model" class="form-control" />
                 <span asp-validation-for="Model" class="text-danger"></span>
-
                 <label asp-for="WatertankCapacity"></label>
                 <input asp-for="WatertankCapacity" class="form-control" />
                 <span asp-validation-for="WatertankCapacity" class="text-danger"></span>
-
                 <label asp-for="ProduceDate"></label>
                 <input asp-for="ProduceDate" class="form-control" />
                 <span asp-validation-for="ProduceDate" class="text-danger"></span>
-
                 <label asp-for="Price"></label>
                 <input asp-for="Price" class="form-control" />
                 <span asp-validation-for="Price" class="text-danger"></span>
-
                 <label asp-for="ImageUrl"></label>
                 <input asp-for="ImageUrl" class="form-control" />
                 <span asp-validation-for="ImageUrl" class="text-danger"></span>
 
             </div>
-            <button type="submit" class="btn btn-default">Publish</button>
+            <button type="submit" class="btn btn-default">Add Firetruck</button>
         </form>
     </div>
 </div>
+

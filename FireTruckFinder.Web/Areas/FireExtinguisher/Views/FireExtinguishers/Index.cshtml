@@ -1,27 +1,28 @@
-﻿@model FireTruckListingViewModel
+﻿@model FireExtinguisherListingViewModel
 
 @{
-    ViewData["Title"] = " All FireTrucks";
+    ViewData["Title"] = " All FireExtinguishers";
 }
 
 <h2>@ViewData["Title"]</h2>
 
 
 <div class="row">
-
-    @foreach (var firetruck in Model.FireTrucks)
+    @foreach (var fireExtinguisher in Model.FireExtinguishers)
             {
         <div class="col-md-2">
-            <a asp-action="Details" asp-route-id="@firetruck.Id" asp-route-title="@firetruck.Model">Model: @firetruck.Model</a>
+            <a asp-action="Details" asp-route-id="@fireExtinguisher.Id" asp-route-title="@fireExtinguisher.Type">@fireExtinguisher.Type</a>
             <br />
-            <label asp-for="@firetruck.Price">Exclusive Price: @firetruck.Price</label>
-            <span asp-validation-for="@firetruck.Price" class="text-danger">$</span>
-            <img src="@firetruck.ImageUrl" width="200" height="160" />
+            <label asp-for="@fireExtinguisher.Price">Exclusive Price: @fireExtinguisher.Price</label>
+            <span asp-validation-for="@fireExtinguisher.Price" class="text-danger">$</span>
+            <img src="@fireExtinguisher.ImageUrl" width="200" height="160" />
         </div>
     }
+
 </div>
 
-@if (Model.TotalFireTrucks > Model.FireTrucks.Count())
+
+@if (Model.TotalFireExtinguishers > Model.FireExtinguishers.Count())
 {
     <ul class="pagination">
         <li class="@(Model.CurrentPage == 1 ? "disabled" : string.Empty)">
@@ -38,3 +39,4 @@
         </li>
     </ul>
 }
+

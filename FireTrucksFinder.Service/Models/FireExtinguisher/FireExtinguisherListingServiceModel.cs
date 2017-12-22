@@ -8,6 +8,8 @@ namespace FireTruckFinder.Services.Models.FireExtinguisher
 
     public class FireExtinguisherListingServiceModel : IMapFrom<FireExtinguisher>, IHaveCustomMapping
     {
+        public int Id { get; set;}
+
         [Required]
         public FireExtinguisherType Type { get; set; }
 

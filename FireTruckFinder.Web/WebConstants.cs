@@ -10,5 +10,6 @@
 
         public const string FireTruckArea = "FireTruck";
         public const string FirepumpArea = "Firepump";
+        public const string FireExtinguisherArea = "FireExtinguisher";
     }
 }

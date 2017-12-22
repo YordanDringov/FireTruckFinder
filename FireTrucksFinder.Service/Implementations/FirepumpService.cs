@@ -30,7 +30,7 @@
 
         public async Task<FirepumpDetailsServiceModel> ById(int id)
         => await this.db
-                   .FireTrucks
+                   .FirePumps
                    .Where(f => f.Id == id)
                    .ProjectTo<FirepumpDetailsServiceModel>()
                    .FirstOrDefaultAsync();

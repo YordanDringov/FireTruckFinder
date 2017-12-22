@@ -1,0 +1,19 @@
+﻿@model FireExtinguisherDetailsServiceModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+<h2>Details for product: @Model.Type</h2>
+<div class="row">
+    <div class="form-group">
+        <label asp-for="Type">Type: @Model.Type</label>
+        <br />
+        <label asp-for="Price"></label>
+        <span asp-validation-for="Price" class="text-danger">: @Model.Price $</span>
+        <div class="col-lg-offset">
+            <img src="@Model.ImageUrl" width="400" height="400" />
+        </div>
+        <br />
+        For more information contact to: @Model.Seller
+    </div>
+</div>
